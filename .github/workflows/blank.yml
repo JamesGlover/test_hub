@@ -20,7 +20,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      JG_BRANCH_NAME: ${GITHUB_REF##*/}
+      JG_BRANCH_NAME: ${{ GITHUB_BRANCH }} 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
